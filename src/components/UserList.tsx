@@ -1,9 +1,9 @@
-import type { IUser } from '../types'
+import type { IUsersProps } from '../types'
 
-const UserList = ({users}: {users: IUser[]}) => {
+const UserList = ({users}: IUsersProps) => {
     return (
         <ul>
-            {users.map((user: IUser) => (
+            {users.map((user) => (
                 <li key={user.id}>
                     <strong>{user.name}</strong>: {user.age} лет, {user.email}
                 </li>
